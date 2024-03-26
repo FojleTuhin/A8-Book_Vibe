@@ -6,8 +6,10 @@ const ViewDetails = () => {
     const { bookId } = useParams();
     const bookIdInt= parseInt(bookId);
     const book= allBooks.find(books=> books.bookId === bookIdInt);
-    console.log(book)
     
+    const handleRead=(book)=>{
+        console.log(book);
+    }
     
     return (
         <div className="grid grid-cols-2 mt-14 mb-14 gap-12">
@@ -38,7 +40,7 @@ const ViewDetails = () => {
                 </div>
 
                 <div className="mt-12">
-                    <button className="btn  px-7  bg-none text-xl font-semibold mr-4">Read</button>
+                    <button onClick={()=>handleRead(book)} className="btn  px-7  bg-none text-xl font-semibold mr-4">Read</button>
                     <button className="btn px-7 bg-[#50B1C9] text-xl font-semibold text-white">Wishlist</button>
                 </div>
             </div>
