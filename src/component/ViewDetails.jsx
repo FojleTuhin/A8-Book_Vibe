@@ -42,7 +42,7 @@ const ViewDetails = () => {
 
                 <div className="mt-12">
                     <button onClick={()=>handleRead(book)} className="btn  px-7  bg-none text-xl font-semibold mr-4">Read</button>
-                    <button className="btn px-7 bg-[#50B1C9] text-xl font-semibold text-white">Wishlist</button>
+                    <button onClick={()=>handleRead(book)} className="btn px-7 bg-[#50B1C9] text-xl font-semibold text-white">Wishlist</button>
                 </div>
             </div>
         </div>
