@@ -8,7 +8,7 @@ const Banner = () => {
                 <NavLink to='/listed-books'><button className="btn w-48 bg-[#23BE0A] text-white mt-12">View The List</button></NavLink>
             </div>
             <div>
-                <img className="flex" src="/public/1.png" alt="" />
+                <img className="flex w-[318px] h-[394px]" src="https://blog-cdn.reedsy.com/directories/gallery/110/large_aabfef4fc0dbce2626dcdd247e6e56b9.jpg" alt="" />
             </div>
         </div>
     );

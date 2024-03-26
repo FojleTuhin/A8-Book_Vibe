@@ -11,7 +11,6 @@ const Books = () => {
         .then(data=> setBooks(data))
     },[])
 
-    console.log(books);
 
     return (
         <div className="pb-28">

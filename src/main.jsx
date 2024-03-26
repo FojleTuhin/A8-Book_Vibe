@@ -10,6 +10,8 @@ import ErrorPage from './pages/ErrorPage';
 import ListedBooks from './pages/ListedBooks';
 import Root from './pages/Root';
 import ViewDetails from './component/ViewDetails';
+import ReadBooks from './component/ReadBooks';
+import WishList from './component/WishList';
 
 const router = createBrowserRouter([
   {
@@ -23,12 +25,22 @@ const router = createBrowserRouter([
       },
       {
         path:'/listed-books',
-        element:<ListedBooks></ListedBooks>
+        element:<ListedBooks></ListedBooks>,
+       children:[
+        {
+          index: true,
+          element:<ReadBooks></ReadBooks>
+        },
+        {
+          path:'wishlist',
+          element:<WishList></WishList>
+        }
+       ]
       },
       {
         path:'/book/:bookId',
         element:<ViewDetails></ViewDetails>,
-        loader:()=>fetch('books.json')
+        loader:()=>fetch('../books.json')
       }
     ]
   }

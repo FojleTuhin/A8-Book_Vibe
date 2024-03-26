@@ -2,16 +2,17 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const ViewDetails = () => {
 
-    const books = useLoaderData();
+    const allBooks = useLoaderData();
     const { bookId } = useParams();
     const bookIdInt= parseInt(bookId);
-    const book= books.find(book => book.bookId == bookIdInt)
+    const book= allBooks.find(books=> books.bookId === bookIdInt);
     console.log(book)
+    
     
     return (
         <div className="grid grid-cols-2 mt-14 mb-14 gap-12">
             <div className="bg-[#1313130D] p-20 rounded-2xl">
-                <img src={book.image} alt="" />
+                <img src={book.image} alt="book" />
             </div>
             <div>
                 <p className="text-4xl font-bold mb-4">{book.bookName}</p>
