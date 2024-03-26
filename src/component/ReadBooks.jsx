@@ -1,8 +1,10 @@
 import { CiLocationOn } from "react-icons/ci";
 import { AiOutlineFilePdf } from "react-icons/ai";
 import { GoPerson } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const ReadBooks = () => {
+    
     return (
         <div className="mt-8 mb-6">
             <div className="border rounded-2xl flex gap-6 p-6">
@@ -29,7 +31,7 @@ const ReadBooks = () => {
                     <div className="flex gap-4">
                         <p className="px-5 py-3 bg-[#328EFF26] text-[#328EFF] rounded-full">Category: Classic</p>
                         <p className="px-5 py-3 bg-[#FFAC3326] text-[#FFAC33] rounded-full">Rating: 4.5</p>
-                        <button className="btn bg-[#23BE0A] text-white rounded-full">View details</button>
+                        <Link><button className="btn bg-[#23BE0A] text-white rounded-full">View details</button></Link>
                         
                     </div>
 
