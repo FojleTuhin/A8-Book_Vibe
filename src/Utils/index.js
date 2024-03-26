@@ -1,3 +1,6 @@
+import toast from "react-hot-toast"
+
+
 
 export const getBooks=()=>{
     let books=[]
@@ -6,4 +9,19 @@ export const getBooks=()=>{
         books= JSON.parse(storedBooks)
     }
     return books
+}
+
+
+
+export const saveBook = book =>{
+    let books= getBooks()
+    const isExist= books.find(b => b.bookId === book.bookId)
+
+    if(isExist){
+        return toast.error('Already Read');
+    }
+
+    books.push(book)
+    localStorage.setItem('books', JSON.stringify(books))
+    toast.success('Booked Read Successfully');
 }

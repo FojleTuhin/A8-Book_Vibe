@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook } from "../Utils";
 
 const ViewDetails = () => {
 
@@ -8,7 +9,7 @@ const ViewDetails = () => {
     const book= allBooks.find(books=> books.bookId === bookIdInt);
     
     const handleRead=(book)=>{
-        console.log(book);
+        saveBook(book)
     }
     
     return (
