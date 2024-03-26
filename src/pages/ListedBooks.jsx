@@ -20,7 +20,7 @@ const ListedBooks = () => {
 
                 </details>
             </div>
-            <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
+            <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800 max-w-6xl ml-1 rounded-lg">
                 <Link
                     to=''
                     onClick={() => setTabIndex(0)}
