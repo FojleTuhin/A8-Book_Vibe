@@ -1,8 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Book Vibe
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## 🔗 Link
+[![Website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://tuhin-book-vibe.netlify.app/)
+
+
+
+## Features
+
+- Allows users to sign in or sign up for an account
+- Provides information about books.
+- Allows users to search for books by rating, no of pages, published year.
+- Gives writing tips
+- Wishlist functionality
+
+
+## Characteristics 
+
+
+- Availability display
+- Product descriptions
+- Account system
+- Reading recommendations
+- Author information
