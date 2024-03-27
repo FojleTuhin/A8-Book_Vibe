@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const ReadBooksCard = ({book}) => {
     const{bookId, bookName, author, tags, image, totalPages, rating, category, yearOfPublishing, publisher}=book;
 
-
     return (
         <div>
             <div className="border rounded-2xl flex gap-6 p-6 mt-6">

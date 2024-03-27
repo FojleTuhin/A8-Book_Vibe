@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveBook } from "../Utils";
-import { saveWishlist } from "../Utils";
+import { saveWishes } from "../Utils";
 
 const ViewDetails = () => {
 
@@ -13,8 +13,8 @@ const ViewDetails = () => {
         saveBook(book)
     }
 
-    const handleWish=()=>{
-        saveWishlist(book)
+    const handleWish=(book)=>{
+        saveWishes(book)
     }
     
     return (
