@@ -38,10 +38,14 @@ export const getWishes=()=>{
 }
 
 export const saveWishes = book =>{
-    let wishes= getBooks()
+    let wishes= getWishes()
     const isExist= wishes.find(b => b.bookId === book.bookId)
 
-    if(isExist){
+    let books= getBooks()
+    const isExisting= books.find(b => b.bookId === book.bookId)
+
+
+    if(isExist || isExisting){
         return toast.error('You have already read this book');
     }
 

@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { Link, Outlet } from "react-router-dom";
-import ReadBooks from "../component/ReadBooks";
 const ListedBooks = () => {
 
     const [tabIndex, setTabIndex] = useState(0)
 
-    const handleBooksFilter=filter=>{
-        
+    const handleBooksFilter = filter => {
+
     }
 
     return (
-        <div>
+        <div className="p-6 md:p-0">
             <div className="mt-8 h-[100px] bg-[#1313130D] text-2xl font-bold rounded-2xl flex items-center justify-center"> Books
             </div>
             <div className="flex justify-center mt-8 mb-14">

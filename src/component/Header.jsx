@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 const Header = () => {
 
@@ -21,14 +21,14 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
+        <Link to='/'><a className=" text-xl md:text-2xl font-bold">Book Vibe</a></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {links}
         </ul>
       </div>
-      <div className="navbar-end flex gap-4">
+      <div className="navbar-end flex gap-2 md:gap-4">
         <a className="btn bg-[#23BE0A] text-white font-semibold">Sign In</a>
         <a className="btn bg-[#59C6D2] text-white font-semibold">Sign Up</a>
       </div>

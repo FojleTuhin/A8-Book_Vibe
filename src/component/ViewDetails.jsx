@@ -18,11 +18,11 @@ const ViewDetails = () => {
     }
     
     return (
-        <div className="grid grid-cols-2 mt-14 mb-14 gap-12">
+        <div className="md:grid grid-cols-2 mt-14 mb-14 gap-12 p-6 md:p-0">
             <div className="bg-[#1313130D] p-20 rounded-2xl">
-                <img src={book.image} alt="book" />
+                <img className="bg-cover" src={book.image} alt="book" />
             </div>
-            <div>
+            <div className="mt-6 md:mt-0">
                 <p className="text-4xl font-bold mb-4">{book.bookName}</p>
                 <p className="text-xl font-medium mb-6">{book.author}</p>
                 <hr />
