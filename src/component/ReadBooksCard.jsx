@@ -8,7 +8,7 @@ const ReadBooksCard = ({book}) => {
 
     return (
         <div>
-            <div className="border rounded-2xl flex gap-6 p-6">
+            <div className="border rounded-2xl flex gap-6 p-6 mt-6">
                 <div className="bg-[#1313130D] rounded-2xl w-[230px] h-[230px] flex justify-center items-center">
                     <img className="h-[172px] w-[132px]" src={image} alt="" />
                 </div>

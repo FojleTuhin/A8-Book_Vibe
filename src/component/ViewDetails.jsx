@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveBook } from "../Utils";
+import { saveWishlist } from "../Utils";
 
 const ViewDetails = () => {
 
@@ -10,6 +11,10 @@ const ViewDetails = () => {
     
     const handleRead=(book)=>{
         saveBook(book)
+    }
+
+    const handleWish=()=>{
+        saveWishlist(book)
     }
     
     return (
@@ -42,7 +47,7 @@ const ViewDetails = () => {
 
                 <div className="mt-12">
                     <button onClick={()=>handleRead(book)} className="btn  px-7  bg-none text-xl font-semibold mr-4">Read</button>
-                    <button onClick={()=>handleRead(book)} className="btn px-7 bg-[#50B1C9] text-xl font-semibold text-white">Wishlist</button>
+                    <button onClick={()=>handleWish(book)} className="btn px-7 bg-[#50B1C9] text-xl font-semibold text-white">Wishlist</button>
                 </div>
             </div>
         </div>

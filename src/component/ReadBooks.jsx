@@ -7,11 +7,9 @@ import ReadBooksCard from "./ReadBooksCard";
 const ReadBooks = () => {
 
     const [books, setBooks]=useState([])
-    const [display, setDisplay]=useState([])
     useEffect(()=>{
         const storedBooks= getBooks()
         setBooks(storedBooks)
-        setDisplay(storedBooks)
     },[])
 
       
@@ -19,7 +17,7 @@ const ReadBooks = () => {
     return (
         <div className="mt-8 mb-6">
             {
-                display.map( book=> <ReadBooksCard key={book.bookId} book={book}></ReadBooksCard>)
+                books.map( book=> <ReadBooksCard key={book.bookId} book={book}></ReadBooksCard>)
             }
 
         </div>
