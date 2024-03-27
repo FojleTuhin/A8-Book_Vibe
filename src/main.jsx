@@ -14,6 +14,8 @@ import ReadBooks from './component/ReadBooks';
 import WishList from './component/WishList';
 import PagesToRead from './pages/PagesToRead';
 import { Toaster } from 'react-hot-toast';
+import WritingTips from './pages/WritingTips';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
       {
         path:'/pagesToRead',
         element:<PagesToRead></PagesToRead>
+      },
+      {
+        path:'/writing-tips',
+        element:<WritingTips></WritingTips>
+      },
+      {
+        path:'/about',
+        element:<About></About>
       }
     ]
   }
