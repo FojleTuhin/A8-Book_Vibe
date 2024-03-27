@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Book Vibe
 
@@ -26,3 +27,6 @@
 - Account system
 - Reading recommendations
 - Author information
+=======
+##  Book vibe
+>>>>>>> 48bab1c306d8f684793dbd90594d1bf911a7e8be
